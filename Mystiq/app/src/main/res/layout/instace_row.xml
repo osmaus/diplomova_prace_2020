@@ -14,7 +14,7 @@
         android:id="@+id/label_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
         android:text="Lokalita:"
         app:layout_constraintEnd_toStartOf="@+id/location"
@@ -25,10 +25,10 @@
 
     <TextView
         android:id="@+id/location"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="8dp"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/label_location"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Datum:"
-        app:layout_constraintEnd_toEndOf="@+id/label_location"
+        app:layout_constraintStart_toStartOf="@id/label_location"
         app:layout_constraintTop_toBottomOf="@+id/label_location"
         />
 
@@ -53,10 +53,9 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/location"
         app:layout_constraintBottom_toBottomOf="@+id/label_date"
-        app:layout_constraintStart_toEndOf="@+id/label_date"
         tools:text="2.5.2020"
         />
 
@@ -66,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Čas:"
-        app:layout_constraintEnd_toEndOf="@+id/label_date"
+        app:layout_constraintStart_toStartOf="@id/label_location"
         app:layout_constraintTop_toBottomOf="@+id/label_date"
         />
 
@@ -74,10 +73,9 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/location"
         app:layout_constraintBottom_toBottomOf="@+id/label_time"
-        app:layout_constraintStart_toEndOf="@+id/label_time"
         tools:text="12:00"
         />
     <TextView
